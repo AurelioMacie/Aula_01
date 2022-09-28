@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
+//HTTP
+import { HttpClientModule } from '@angular/common/http'
+
 import { AppComponent } from './app.component';
 import { PrimeiroComponenteComponent } from './componentes/primeiro-componente/primeiro-componente.component';
 import { ComponentePaiComponent } from './componentes/componente-pai/componente-pai.component';
@@ -12,6 +16,8 @@ import { EmitterComponent } from './componentes/emitter/emitter.component';
 import { ChangeNumberComponent } from './componentes/change-number/change-number.component';
 import { ListRenderComponent } from './componentes/list-render/list-render.component';
 import { PipesComponent } from './componentes/pipes/pipes.component';
+import { TwoWayBindingComponent } from './componentes/two-way-binding/two-way-binding.component';
+import { ItemDetailComponent } from './componentes/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +30,16 @@ import { PipesComponent } from './componentes/pipes/pipes.component';
     EmitterComponent,
     ChangeNumberComponent,
     ListRenderComponent,
-    PipesComponent
+    PipesComponent,
+    TwoWayBindingComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
