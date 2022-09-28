@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { PrimeiroComponenteComponent } from './componentes/primeiro-componente/primeiro-componente.component';
 import { ComponentePaiComponent } from './componentes/componente-pai/componente-pai.component';
@@ -32,7 +32,8 @@ import { TwoWayBindingComponent } from './componentes/two-way-binding/two-way-bi
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
